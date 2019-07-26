@@ -5,6 +5,8 @@
   background-size: cover;
   background-position: center;
   background-blend-mode:darken;
+  overflow-x:hidden;
+
 }
 .logo{
   text-align: center;
@@ -28,6 +30,8 @@
   width:110%;
   margin-top: 250px;
   text-align: center;
+  height:70px;
+  padding: 12px;
 }
 .navbar-brand{
     font-family: 'Hanalei', cursive;
@@ -39,7 +43,7 @@
   padding-right: 50px;
 }
 #nav2{
-  margin:10px;
+  margin: 10px;
   padding-right: 50px;
   text-align: center;
 }
@@ -55,4 +59,20 @@
   font-family: 'Indie Flower', cursive;
   font-size: 50px;
   font-weight: bolder;
+}
+.about{
+  text-align: center;
+  background-color: black;
+  margin-top: 50px;
+  opacity: 0.8;
+  width:100%;
+  font-family: 'Indie Flower', cursive;
+  font-size: 50px;
+  font-weight: bolder;
+  font-size: 30px;
+
+}
+.pewa{
+  text-align: center;
+  padding: 50px;
 }

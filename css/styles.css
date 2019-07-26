@@ -22,3 +22,8 @@
   font-family: 'Butcherman', cursive;
   font-size: 35px;
 }
+.content{
+  background-color: black;
+  opacity:0.8;
+  width:110%;
+}

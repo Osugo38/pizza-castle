@@ -1,0 +1,24 @@
+ body{
+  background-color: #eee;
+  color: white;
+  background-image: url(../images/ona.jpg);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode:darken;
+}
+.logo{
+  text-align: center;
+  background-color: black;
+  margin-top: 50px;
+  opacity: 0.8;
+  width:110%;
+
+}
+.logo h1{
+  font-size:150px;
+  font-family: 'Hanalei', cursive;
+}
+.logo h4{
+  font-family: 'Butcherman', cursive;
+  font-size: 35px;
+}

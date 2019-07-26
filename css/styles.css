@@ -27,8 +27,24 @@
   opacity:0.8;
   width:110%;
   margin-top: 250px;
+  text-align: center;
 }
 .navbar-brand{
     font-family: 'Hanalei', cursive;
     font-size: 50px;
+}
+.nav{
+  left: 100%;
+}
+#nav1{
+  margin:10px;
+  padding-right: 50px;
+}
+#nav2{
+  margin:10px;
+  padding-right: 70px;
+  text-align: center;
+}
+.row{
+  justify-content: flex-end;
 }

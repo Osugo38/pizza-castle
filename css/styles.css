@@ -26,4 +26,9 @@
   background-color: black;
   opacity:0.8;
   width:110%;
+  margin-top: 250px;
+}
+.navbar-brand{
+    font-family: 'Hanalei', cursive;
+    font-size: 50px;
 }

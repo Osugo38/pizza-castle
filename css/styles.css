@@ -33,18 +33,26 @@
     font-family: 'Hanalei', cursive;
     font-size: 50px;
 }
-.nav{
-  left: 100%;
-}
+
 #nav1{
   margin:10px;
   padding-right: 50px;
 }
 #nav2{
   margin:10px;
-  padding-right: 70px;
+  padding-right: 50px;
   text-align: center;
 }
 .row{
   justify-content: flex-end;
+}
+.contact{
+  text-align: center;
+  background-color: black;
+  margin-top: 50px;
+  opacity: 0.8;
+  width:110%;
+  font-family: 'Indie Flower', cursive;
+  font-size: 50px;
+  font-weight: bolder;
 }

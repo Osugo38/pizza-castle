@@ -23,6 +23,39 @@ $(document).ready(function(){
      });
 });
 
+$(document).ready(function(){
+  $("#pata1").click(function(){
+    $(".formo1").toggle();
+    $("#pata1").toggle();
+  });
+     $(".formo1").click(function(){
+       $("#pata1").hide();
+       $(".formo1").show();
+     });
+});
+
+$(document).ready(function(){
+  $("#pata2").click(function(){
+    $(".formo2").toggle();
+    $("#pata2").toggle();
+  });
+     $(".formo2").click(function(){
+       $("#pata2").hide();
+       $(".formo2").show();
+     });
+});
+
+$(document).ready(function(){
+  $("#pata3").click(function(){
+    $(".formo3").toggle();
+    $("#pata3").toggle();
+  });
+     $(".formo3").click(function(){
+       $("#pata3").hide();
+       $(".formo3").show();
+     });
+});
+
 
 
 

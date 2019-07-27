@@ -56,8 +56,15 @@ $(document).ready(function(){
      });
 });
 
+function deliver(){
+  prompt("ENTER THE AREA IT SHOULD BE DELIVERED AROUND NAIROBI");
+  return false;
+}
+function okota(){
+  alert("YOUR PIZZA WILL BE READY IN 10 MINUTES")
+  return true;
 
-
+}
 
 
 
@@ -96,15 +103,15 @@ var toppings= document.getElementById("toppings").value;
 function order(){
 
   if(size === 1){
-    alert("Toppings of the pizza you have  selected, cotsts of ksh. 300/= on top of what the pizza costs");
+    alert("Toppings of the pizza you have  selected, costs of ksh. 300/= on top of what the pizza costs");
     return false;
   }
 else if (size === 2) {
-  alert("Toppings of the pizza you have  selected, cotsts of ksh. 200/= on top of what the pizza costs");
+  alert("Toppings of the pizza you have  selected, costs of ksh. 200/= on top of what the pizza costs");
   return false;
 }
 else  {
-  alert("Toppings of the pizza you have  selected, cotsts of ksh. 100/= on top of what the pizza costs");
+  alert("Toppings of the pizza you have  selected, costs of ksh. 100/= on top of what the pizza costs");
   return true;
 }
 }
@@ -115,22 +122,3 @@ function validate(){
     return false;
   }
 }
-
-
-
-// $(document).ready(function(){
-//   $('submit').submit(function{
-//     alert("name, thank you for getting out to us")
-//   });
-// });
-//
-
-
-
-// function selectGender(){
-//   var gender = document.getElementById("list").value;
-//   if (gender == 0) {
-//     alert("Gender must be selected");
-//     return false;
-//   }
-// }

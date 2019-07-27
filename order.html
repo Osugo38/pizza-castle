@@ -20,12 +20,12 @@
       </div>
       <div class="container" id="uku">
         <h1>PIZZA STORE</h1>
-        <p>Hello and thanks for trusting our serfvice .Please click on the type of pizza you want.</p>
+        <p>Hello, Welcome and thanks for trusting our service .Please click on the type of pizza you want and we will be glad to serve you.</p>
         <div class="row">
           <div class="col-md-6">
             <h2>Panner Tikka  pizza</h2></li>
               <img src="images/steakbbq.jpg" width="60%" height="250vh">
-              <p>It is a fusion pizza made with pizza sauce which has Indian spices such as tandoori masala
+              <p>Panner tikka is a fusion pizza made with pizza sauce which has Indian spices such as tandoori masala
                 or garam masala. It is topped with cubed paneer, onions, capsicum and tomato cooked in yogurt
                 with spices such as red chili powder, tandoori masala and ginger-garlic paste.</p>
 
@@ -62,7 +62,7 @@
             </div>
               <h2>Peri Peri Chicken Pizza</h2></li>
               <img src="images/pizzac.jpg" width="60%" height="250vh">
-              <p>This pizza has sliced chicken breast, mozzarella cheese, and a
+              <p>Peri Peri pizza has sliced chicken breast, mozzarella cheese, and a
                 few other complementary toppings, liberally laced with peri peri sauce.
                  This pizza is perfect for those who like it spicy.</p><br>
 
@@ -123,12 +123,12 @@
 
                     <select class="custom-select" id="toppings" name= "gender();" >
                       <option selected>select Toppings</option>
-                      <option value="1">Mushroom</option>
-                      <option value="2">Onion</option>
+                      <option value="0">Mushroom</option>
+                      <option value="1">Onion</option>
                       <option value="2">Ham</option>
-                      <option value="2">Olives</option>
-                      <option value="2">Tomatoes</option>
-                      <option value="3">Pineapples</option>
+                      <option value="3">Olives</option>
+                      <option value="4">Tomatoes</option>
+                      <option value="5">Pineapples</option>
                     </select><br><br>
                 <button type="button" class="formo2" name="add to cart" onclick="order();">ADD TO CART</button>
             </form>
@@ -177,11 +177,14 @@
             <div class="checkout">
               <h1>My Wishlist</h1>
               <ul>
-                <li></li>
+                placehoder="your cart is still empty"
               </ul>
-
+              <h2>CHOOSE THE METHOD TO ACQUIRE YOUR STUFF</h2>
+                 <button type="button" class="btn btn-secondary" name="button" onclick="okota();">pick the package from the shop.</button>
+                 <button type="button" class="btn btn-secondary" name="button" onclick="deliver();">get the package delivered to where you are.</button>
             </div>
 
+             <p></p>
           </div>
 
         </div>

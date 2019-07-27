@@ -88,11 +88,17 @@
 }
 
 #ord{
-  background-color: #34495e ;
+  background-color: #34495e;
 }
 #uku h2{
   font-family: 'Lacquer', sans-serif;
 }
 #uku p{
 font-family: 'Patua One', cursive;
+}
+.checkout{
+  display:none;
+}
+.formo{
+  display:none;
 }

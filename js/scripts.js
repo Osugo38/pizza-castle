@@ -1,12 +1,71 @@
+$(document).ready(function(){
+  $("#clic").click(function(){
+    $(".checkout").toggle();
+      $("#clic").toggle();
+      });
+
+      $(".checkout").click(function(){
+        $("#clic").show();
+          $(".checkout").hide();
+
+});
+});
+
+
+$(document).ready(function(){
+  $("#pata").click(function(){
+    $(".formo").toggle();
+    $("#pata").toggle();
+  });
+     $(".formo").click(function(){
+       $("#pata").hide();
+       $(".formo").show();
+     });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var size = document.getElementById("size").value;
+var crust= document.getElementById("crust").value;
+var toppings= document.getElementById("toppings").value;
+
 function order(){
-  var size = document.getElementById("size").value;
-  var crust= document.getElementById("crust").value;
-  var toppings= document.getElementById("toppings").value;
-  if(size == 1){
+
+  if(size === 1){
     alert("Toppings of the pizza you have  selected, cotsts of ksh. 300/= on top of what the pizza costs");
     return false;
   }
-
 else if (size === 2) {
   alert("Toppings of the pizza you have  selected, cotsts of ksh. 200/= on top of what the pizza costs");
   return false;
@@ -17,7 +76,12 @@ else  {
 }
 }
 
-
+function validate(){
+  if(size == 0 || crust == 0 || toppings ==0){
+    alert("Ensure each field is filled");
+    return false;
+  }
+}
 
 
 

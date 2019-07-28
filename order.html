@@ -29,33 +29,37 @@
                 or garam masala. It is topped with cubed paneer, onions, capsicum and tomato cooked in yogurt
                 with spices such as red chili powder, tandoori masala and ginger-garlic paste.</p>
 
-                  <button type="button" name="button" class="btn btn-danger navbar-btn wiggle" id="pata" >ORDER THIS</button>
+                  <button type="button" name="button" class="btn btn-danger navbar-btn wiggle" id="pata" >ORDER PANNER TIKKA</button>
 
                 <div class="formo">
                 <form class="form" action="index.html" id="myOrder">
                   <select class="custom-select" id="size" name= "order();" >
-                    <option value="0">select Size</option>
-                    <option value="1">large..............Ksh 950</option>
-                    <option value="2">medium........Ksh 700</option>
-                    <option value="3">small.............Ksh 500</option>
+                    <option id="newSize" value="0">select Size</option>
+                    <option id="newSize" value="1">large..............Ksh 950</option>
+                    <option id="newSize" value="2">medium........Ksh 700</option>
+                    <option  id="newSize"value="3">small.............Ksh 500</option>
                   </select><br><br>
 
                     <select class="custom-select" id="crust" name= "order();" >
-                      <option selected>select Crust</option>
-                      <option value="1">Stuffed</option>class="formo"
-                      <option value="2">Crispy</option>
-                      <option value="3">glutten-free</option>
+                      <option id="newCrust" selected>select Crust</option>
+                      <option id="newCrust" value="1">Stuffed</option>class="formo"
+                      <option id="newCrust" value="2">Crispy</option>
+                      <option id="newCrust" value="3">glutten-free</option>
                       </select><br><br>
 
                       <select class="custom-select" id="toppings" name= "order();" >
                         <option selected>select Toppings</option>
-                        <option value="1">Mushroom</option>
-                        <option value="2">Onion</option>
-                        <option value="2">Ham</option>
-                        <option value="2">Olives</option>
-                        <option value="2">Tomatoes</option>
-                        <option value="3">Pineapples</option>
+                        <option id="newToppings" value="0">Mushroom</option>
+                        <option id="newToppings" value="1">Onion</option>
+                        <option id="newToppings" value="2">Ham</option>
+                        <option id="newToppings" value="3">Olives</option>
+                        <option id="newToppings" value="4">Tomatoes</option>
+                        <option id="newToppings" value="5">Pineapples</option>
                       </select><br><br>
+                      <div class="form-group">
+                        <label for="pizzaQuantity">select quantity</label>
+                        <input class="form-control" type="number" id=quantity>
+                      </div>
                       <button type="button" class="formo" name="add to cart" onclick="order();">ADD TO CART</button>
 
               </form>
@@ -66,7 +70,7 @@
                 few other complementary toppings, liberally laced with peri peri sauce.
                  This pizza is perfect for those who like it spicy.</p><br>
 
-                 <button type="button" name="button" class="btn btn-danger navbar-btn wiggle" id="pata1" >ORDER THIS</button>
+                 <button type="button" name="button" class="btn btn-danger navbar-btn wiggle" id="pata1" >ORDER PERI PERI CHICKEN</button>
 
                     <div class=formo1>
                  <form class="form" action="index.html" id="myOrder">
@@ -93,6 +97,10 @@
                          <option value="2">Tomatoes</option>
                          <option value="3">Pineapples</option>
                        </select><br><br>
+                       <div class="form-group">
+                         <label for="pizzaQuantity">select quantity</label>
+                         <input class="form-control" type="number" id=quantity>
+                       </div>
                        <button type="button" class="formo1" name="add to cart" onclick="order();">ADD TO CART</button>
 
                </form>
@@ -104,7 +112,7 @@
               <img src="images/hawaiian.jpg" width="60%" height="250vh">
               <p>Hawaiian pizza is a pizza topped with tomato sauce, cheese, pineapple, and back bacon or ham. </p><br><br>
 
-              <button type="button" name="button" class="btn btn-danger navbar-btn wiggle" id="pata2" >ORDER THIS</button>
+              <button type="button" name="button" class="btn btn-danger navbar-btn wiggle" id="pata2" >ORDER HAWAIIAN</button>
                  <div class="formo2">
               <form class="form" action="index.html" id="size">
                 <select class="custom-select" id="list" name= "gender();" >
@@ -130,6 +138,10 @@
                       <option value="4">Tomatoes</option>
                       <option value="5">Pineapples</option>
                     </select><br><br>
+                    <div class="form-group">
+                      <label for="pizzaQuantity">select quantity</label>
+                      <input class="form-control" type="number" id=quantity>
+                    </div>
                 <button type="button" class="formo2" name="add to cart" onclick="order();">ADD TO CART</button>
             </form>
           </div>
@@ -140,17 +152,17 @@
                  and beef mixed together and seasoned with paprika or other chili pepper.
                  Pepperoni is characteristically soft, slightly smoky, and bright red in color.</p><br>
 
-                 <button type="button" name="button" class="btn btn-danger navbar-btn wiggle" id="pata3" >ORDER THIS</button>
+                 <button type="button" name="button" class="btn btn-danger navbar-btn wiggle" id="pata3" >ORDER PEPPERONI</button>
                    <div class="formo3">
                  <form class="form" action="index.html" id="myOrder">
-                   <select class="custom-select" id="size" name= "gender();" >
+                   <select class="form-control" id="size">
                      <option value="0">select Size</option>
                      <option value="1">large..............Ksh 950</option>
                      <option value="2">medium........Ksh 700</option>
                      <option value="3">small.............Ksh 500</option>
                    </select><br><br>
 
-                     <select class="custom-select" id="crust" name= "gender();" >
+                     <select class="form-control" id="crust">
                        <option selected>select Crust</option>
                        <option value="1">Stuffed</option>
                        <option value="2">Crispy</option>
@@ -159,13 +171,17 @@
 
                        <select class="custom-select" id="toppings" name= "gender();" >
                          <option selected>select Toppings</option>
-                         <option value="1">Mushroom</option>
-                         <option value="2">Onion</option>
+                         <option value="0">Mushroom</option>
+                         <option value="1">Onion</option>
                          <option value="2">Ham</option>
-                         <option value="2">Olives</option>
-                         <option value="2">Tomatoes</option>
-                         <option value="3">Pineapples</option>
+                         <option value="3">Olives</option>
+                         <option value="4">Tomatoes</option>
+                         <option value="5">Pineapples</option>
                        </select><br><br>
+                       <div class="form-group">
+                         <label for="pizzaQuantity">select quantity</label>
+                         <input class="form-control" type="number" id=quantity>
+                       </div>
                    <button type="button" class="formo3" name="add to cart" onclick="order();">ADD TO CART</button>
                </form>
               </div>
@@ -174,10 +190,12 @@
         <div class="row">
           <div class="col-md-12">
             <button type="button" class="btn btn-danger navbar-btn heartbeat" id = "clic" name="button">VIEW CART</button>
+
+
             <div class="checkout">
               <h1>My Wishlist</h1>
-              <ul>
-                placehoder="your cart is still empty"
+              <ul id ="cart">
+                <li></li>
               </ul>
               <h2>CHOOSE THE METHOD TO ACQUIRE YOUR STUFF</h2>
                  <button type="button" class="btn btn-secondary" name="button" onclick="okota();">pick the package from the shop.</button>

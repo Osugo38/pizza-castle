@@ -11,7 +11,6 @@ $(document).ready(function(){
 });
 });
 
-
 $(document).ready(function(){
   $("#pata").click(function(){
     $(".formo").toggle();
@@ -56,6 +55,10 @@ $(document).ready(function(){
      });
 });
 
+
+
+
+
 function deliver(){
   prompt("ENTER THE AREA IT SHOULD BE DELIVERED AROUND NAIROBI");
   return false;
@@ -66,25 +69,86 @@ function okota(){
 
 }
 
+//
+// //business logic
+//
+// function order(size,crust,toppings) {
+//     this.orderdSize = size;
+//     this.orderedCrust = crust;
+//     this.orderedToppings =toppings;
+//   }
+//   function PizzaOrder(){
+//     this.orders=[];
+//   }
+// PizzaOrder.prototype.addorder = function (order){
+//   this.orders.push(order);
+// }
+// function Order (size,crust,toppings){
+//   this.size =size;
+//   this.crust = crust;
+//   this.topping = toppings;
+// }
+//
 
+//   //ui logiic
+//   $(document).ready(function() {
+//   $("#myOrder").submit(function(event) {
+//     event.preventDefault();
+//
+//     var inputtedSize = $("size").val();
+//     var inputtedCrust = $("crust").val();
+//     var inputtedToppings = $('input[type="checkbox"]:checked').val();
+//
+//     var newOrder = new Order(inputtedSize, inputtedCrust, inputtedToppings);
+//     pizzaOrder.addorder(newOrder);
+//
+//     var pInputtedSize = pizzaDisplay[0].inputtedSize;
+//     var pInputtedCrust = pizzaDisplay[0].inputtedCrust;
+//     var pInputtedToppings = pizzaDisplay[0].inputtedToppings;
+//
 
+//
+//
+//
+//   $(document).ready(function() {
+//   $(".checkout").submit(function(event) {
+//     event.preventDefault();
+//
+//     var inputtedSize = $("#size").val();
+//     var inputtedCrust = $("#crust").val();
+//     var inputtedToppings = $("#toppings").val();
+//
+//     var newOrder = new Order(inputtedSize, inputtedCrust, inputtedToppings);
+//     pizzaOrder.addorder(newOrder);
+//
+//     $("ul#cart").append("<li><span class='.checkout'>" + newOrder + "</span></li>");
+//
+//     $("option#newSize").val("");
+//     $("input#newCrust").val("");
+//     $("input#newToppings").val("");
+//   });
+// });
+//
+//
+//
+//
+//
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// 
+// function determine(){
+//
+//  var size = parseInt(document.getElementById("size").value);
+//  var crust = parseInt(document.getElementById("crust").value);
+//  var toppings = parseInt(document.getElementById("toppings").value);
+//  var quantity = parseInt(document.getElementById("toppings").value);
+//
+//   if (size === 1) {
+//     alert("waziii");
+//
+//
+//
+// }
+//
 
 
 
@@ -103,15 +167,15 @@ var toppings= document.getElementById("toppings").value;
 function order(){
 
   if(size === 1){
-    alert("Toppings of the pizza you have  selected, costs of ksh. 300/= on top of what the pizza costs");
+    alert("Toppings of the pizza you have  selected, costs of ksh. 300/= per pizza ordered pizza ");
     return false;
   }
 else if (size === 2) {
-  alert("Toppings of the pizza you have  selected, costs of ksh. 200/= on top of what the pizza costs");
+  alert("Toppings of the pizza you have  selected, costs of ksh. 200/= per pizza ordered pizza ");
   return false;
 }
 else  {
-  alert("Toppings of the pizza you have  selected, costs of ksh. 100/= on top of what the pizza costs");
+  alert("Toppings of the pizza you have  selected, costs  ksh. 100/= per pizza ordered pizza ");
   return true;
 }
 }

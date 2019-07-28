@@ -134,21 +134,21 @@ function okota(){
 //
 //
 
-// 
-// function determine(){
-//
-//  var size = parseInt(document.getElementById("size").value);
-//  var crust = parseInt(document.getElementById("crust").value);
-//  var toppings = parseInt(document.getElementById("toppings").value);
-//  var quantity = parseInt(document.getElementById("toppings").value);
-//
-//   if (size === 1) {
-//     alert("waziii");
-//
-//
-//
-// }
-//
+
+function determine(){
+
+ var size = parseInt(document.getElementById("size").value);
+ var crust = parseInt(document.getElementById("crust").value);
+ var toppings = parseInt(document.getElementById("toppings").value);
+ var quantity = parseInt(document.getElementById("toppings").value);
+
+  if (size === 1) {
+    alert("waziii");
+
+
+
+}
+
 
 
 

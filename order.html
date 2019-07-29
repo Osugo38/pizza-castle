@@ -1,208 +1,115 @@
 <!DOCTYPE html>
-  <html lang="en" dir="ltr">class=btn btn="success"
-    <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
-      <link rel="stylesheet" href="css/styles.css" type="text/css">
-      <link rel="stylesheet" href="css/wickedcss.min.css" type="text/css">
-      <script   src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-      <script src="js/scripts.js"></script>
-      <meta charset="utf-8">
-      <link href="https://fonts.googleapis.com/css?family=Lacquer&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Patua+One&display=swap" rel="stylesheet">
-      <title>WHAT WE OFFER</title>
-    </head>
-    <body id="ord">
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="css/wickedcss.min.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Lacquer&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Patua+One&display=swap" rel="stylesheet">
+    <title>WHAT WE OFFER</title>
+  </head>
+
+  <body id="ord">
+    <div class="row">
+      <a href="index.html"><button class="btn btn-secondary navbar-btn" id="nav2">HOME</button></a>
+      <a href="aboutus.html"><button class="btn btn-secondary navbar-btn" id="nav2">ABOUT US</button></a>
+      <a href="faq.html"><button class="btn btn-secondary navbar-btn" id="nav2">FAQ</button></a>
+    </div>
+    <div class="container" id="uku">
+      <h1>PIZZA STORE</h1>
+      <p>Hello, Welcome and thanks for trusting our service .Please click on the type of pizza you want and we will be glad to serve you.</p>
       <div class="row">
-        <a href="index.html"><button class="btn btn-secondary navbar-btn" id="nav2">HOME</button></a>
-        <a href="aboutus.html"><button class="btn btn-secondary navbar-btn" id="nav2">ABOUT US</button></a>
-        <a href="faq.html"><button class="btn btn-secondary navbar-btn" id="nav2">FAQ</button></a>
+        <div class="col-md-6">
+          <h2>Panner Tikka pizza</h2>
+          <img src="images/steakbbq.jpg" width="60%" height="250vh">
+          <p>Panner tikka is a fusion pizza made with pizza sauce which has Indian spices such as tandoori masala
+            or garam masala. It is topped with cubed paneer, onions, capsicum and tomato cooked in yogurt
+            with spices such as red chili powder, tandoori masala and ginger-garlic paste.</p>
+
+        </div>
+        <div class="col-md-6">
+          <h2>Peri Peri Chicken Pizza</h2>
+          <img src="images/pizzac.jpg" width="60%" height="250vh">
+          <p>Peri Peri pizza has sliced chicken breast, mozzarella cheese, and a
+            few other complementary toppings, liberally laced with peri peri sauce.
+            This pizza is perfect for those who like it spicy.</p><br>
+
+        </div>
       </div>
-      <div class="container" id="uku">
-        <h1>PIZZA STORE</h1>
-        <p>Hello, Welcome and thanks for trusting our service .Please click on the type of pizza you want and we will be glad to serve you.</p>
-        <div class="row">
-          <div class="col-md-6">
-            <h2>Panner Tikka  pizza</h2></li>
-              <img src="images/steakbbq.jpg" width="60%" height="250vh">
-              <p>Panner tikka is a fusion pizza made with pizza sauce which has Indian spices such as tandoori masala
-                or garam masala. It is topped with cubed paneer, onions, capsicum and tomato cooked in yogurt
-                with spices such as red chili powder, tandoori masala and ginger-garlic paste.</p>
-
-                  <button type="button" name="button" class="btn btn-danger navbar-btn wiggle" id="pata" >ORDER PANNER TIKKA</button>
-
-                <div class="formo">
-                <form class="form" action="index.html" id="myOrder">
-                  <select class="custom-select" id="size" name= "order();" >
-                    <option id="newSize" value="0">select Size</option>
-                    <option id="newSize" value="1">large..............Ksh 950</option>
-                    <option id="newSize" value="2">medium........Ksh 700</option>
-                    <option  id="newSize"value="3">small.............Ksh 500</option>
-                  </select><br><br>
-
-                    <select class="custom-select" id="crust" name= "order();" >
-                      <option id="newCrust" selected>select Crust</option>
-                      <option id="newCrust" value="1">Stuffed</option>class="formo"
-                      <option id="newCrust" value="2">Crispy</option>
-                      <option id="newCrust" value="3">glutten-free</option>
-                      </select><br><br>
-
-                      <select class="custom-select" id="toppings" name= "order();" >
-                        <option selected>select Toppings</option>
-                        <option id="newToppings" value="0">Mushroom</option>
-                        <option id="newToppings" value="1">Onion</option>
-                        <option id="newToppings" value="2">Ham</option>
-                        <option id="newToppings" value="3">Olives</option>
-                        <option id="newToppings" value="4">Tomatoes</option>
-                        <option id="newToppings" value="5">Pineapples</option>
-                      </select><br><br>
-                      <div class="form-group">
-                        <label for="pizzaQuantity">select quantity</label>
-                        <input class="form-control" type="number" id=quantity>
-                      </div>
-                      <button type="button" class="formo" name="add to cart" onclick="order();">ADD TO CART</button>
-
-              </form>
-            </div>
-              <h2>Peri Peri Chicken Pizza</h2></li>
-              <img src="images/pizzac.jpg" width="60%" height="250vh">
-              <p>Peri Peri pizza has sliced chicken breast, mozzarella cheese, and a
-                few other complementary toppings, liberally laced with peri peri sauce.
-                 This pizza is perfect for those who like it spicy.</p><br>
-
-                 <button type="button" name="button" class="btn btn-danger navbar-btn wiggle" id="pata1" >ORDER PERI PERI CHICKEN</button>
-
-                    <div class=formo1>
-                 <form class="form" action="index.html" id="myOrder">
-                   <select class="custom-select" id="size" name= "order();" >
-                     <option value="0">select Size</option>
-                     <option value="1">large..............Ksh 950</option>
-                     <option value="2">medium........Ksh 700</option>
-                     <option value="3">small.............Ksh 500</option>
-                   </select><br><br>
-
-                     <select class="custom-select" id="crust" name= "order();" >
-                       <option selected>select Crust</option>
-                       <option value="1">Stuffed</option>
-                       <option value="2">Crispy</option>
-                       <option value="3">glutten-free</option>
-                       </select><br><br>
-
-                       <select class="custom-select" id="toppings" name= "order();" >
-                         <option selected>select Toppings</option>
-                         <option value="1">Mushroom</option>
-                         <option value="2">Onion</option>
-                         <option value="2">Ham</option>
-                         <option value="2">Olives</option>
-                         <option value="2">Tomatoes</option>
-                         <option value="3">Pineapples</option>
-                       </select><br><br>
-                       <div class="form-group">
-                         <label for="pizzaQuantity">select quantity</label>
-                         <input class="form-control" type="number" id=quantity>
-                       </div>
-                       <button type="button" class="formo1" name="add to cart" onclick="order();">ADD TO CART</button>
-
-               </form>
-              </div>
-
-          </div>
-            <div class="col-md-6">
-              <h2>Hawaiian Pizza</h2></li>
-              <img src="images/hawaiian.jpg" width="60%" height="250vh">
-              <p>Hawaiian pizza is a pizza topped with tomato sauce, cheese, pineapple, and back bacon or ham. </p><br><br>
-
-              <button type="button" name="button" class="btn btn-danger navbar-btn wiggle" id="pata2" >ORDER HAWAIIAN</button>
-                 <div class="formo2">
-              <form class="form" action="index.html" id="size">
-                <select class="custom-select" id="list" name= "gender();" >
-                  <option value="0">select Size</option>
-                  <option value="1">large..............Ksh 950</option>
-                  <option value="2">medium........Ksh 700</option>
-                  <option value="3">small.............Ksh 500</option>
-                </select><br><br>
-
-                  <select class="custom-select" id="crust" name= "gender();" >
-                    <option selected>select Crust</option>
-                    <option value="1">Stuffed</option>
-                    <option value="2">Crispy</option>
-                    <option value="3">glutten-free</option>
-                    </select><br><br>
-
-                    <select class="custom-select" id="toppings" name= "gender();" >
-                      <option selected>select Toppings</option>
-                      <option value="0">Mushroom</option>
-                      <option value="1">Onion</option>
-                      <option value="2">Ham</option>
-                      <option value="3">Olives</option>
-                      <option value="4">Tomatoes</option>
-                      <option value="5">Pineapples</option>
-                    </select><br><br>
-                    <div class="form-group">
-                      <label for="pizzaQuantity">select quantity</label>
-                      <input class="form-control" type="number" id=quantity>
-                    </div>
-                <button type="button" class="formo2" name="add to cart" onclick="order();">ADD TO CART</button>
-            </form>
-          </div>
-
-              <h2>Pepperoni Pizza</h2></li>
-              <img src="images/pizzap.jpg" width="60%" height="250vh" >
-              <p>Pepperoni is an American variety of salami, made from cured pork
-                 and beef mixed together and seasoned with paprika or other chili pepper.
-                 Pepperoni is characteristically soft, slightly smoky, and bright red in color.</p><br>
-
-                 <button type="button" name="button" class="btn btn-danger navbar-btn wiggle" id="pata3" >ORDER PEPPERONI</button>
-                   <div class="formo3">
-                 <form class="form" action="index.html" id="myOrder">
-                   <select class="form-control" id="size">
-                     <option value="0">select Size</option>
-                     <option value="1">large..............Ksh 950</option>
-                     <option value="2">medium........Ksh 700</option>
-                     <option value="3">small.............Ksh 500</option>
-                   </select><br><br>
-
-                     <select class="form-control" id="crust">
-                       <option selected>select Crust</option>
-                       <option value="1">Stuffed</option>
-                       <option value="2">Crispy</option>
-                       <option value="3">glutten-free</option>
-                       </select><br><br>
-
-                       <select class="custom-select" id="toppings" name= "gender();" >
-                         <option selected>select Toppings</option>
-                         <option value="0">Mushroom</option>
-                         <option value="1">Onion</option>
-                         <option value="2">Ham</option>
-                         <option value="3">Olives</option>
-                         <option value="4">Tomatoes</option>
-                         <option value="5">Pineapples</option>
-                       </select><br><br>
-                       <div class="form-group">
-                         <label for="pizzaQuantity">select quantity</label>
-                         <input class="form-control" type="number" id=quantity>
-                       </div>
-                   <button type="button" class="formo3" name="add to cart" onclick="order();">ADD TO CART</button>
-               </form>
-              </div>
-            </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Hawaiian Pizza</h2>
+          <img src="images/hawaiian.jpg" width="60%" height="250vh">
+          <p>Hawaiian pizza is a pizza topped with tomato sauce, cheese, pineapple, and back bacon or ham. </p><br>
         </div>
-        <div class="row">
-          <div class="col-md-12">
-            <button type="button" class="btn btn-danger navbar-btn heartbeat" id = "clic" name="button">VIEW CART</button>
-
-
-            <div class="checkout">
-              <h1>My Wishlist</h1>
-              <ul id ="cart">
-                <li></li>
-              </ul>
-              <h2>CHOOSE THE METHOD TO ACQUIRE YOUR STUFF</h2>
-                 <button type="button" class="btn btn-secondary" name="button" onclick="okota();">pick the package from the shop.</button>
-                 <button type="button" class="btn btn-secondary" name="button" onclick="deliver();">get the package delivered to where you are.</button>
-            </div>
-
-             <p></p>
-          </div>
-
+        <div class="col-md-6">
+          <h2>Pepperoni Pizza</h2>
+          <img src="images/pizzap.jpg" width="60%" height="250vh">
+          <p>Pepperoni is an American variety of salami, made from cured pork
+            and beef mixed together and seasoned with paprika or other chili pepper.
+            Pepperoni is characteristically soft, slightly smoky, and bright red in color.</p><br>
         </div>
+      </div>
+
+      <h1>place your order here</h1>
+      <div class="form-group">
+
+        <form class="formo" action="index.html" id="myOrder">
+          <select class="form-control" id="type">
+            <option value="0">please select Type of pizza</option>
+            <option value="PANNER TIKKA">PANNER TIKKA</option>
+            <option value="HAWAIIAN">HAWAIIAN</option>
+            <option value="PERI PERI CHICKEN">PERI PERI CHICKEN</option>
+            <option value="PEPPERONI">PEPPERONI</option>
+          </select><br><br>
+
+          <select class="form-control" id="size">
+            <option value="0">please select Size</option>
+            <option value="1">large..............Ksh 950</option>
+            <option value="2">medium........Ksh 700</option>
+            <option value="3">small.............Ksh 500</option>
+          </select><br><br>
+
+          <select class="form-control" id="crust">
+            <option value"0">please select Crust</option>
+            <option value="Stuffed">Stuffed</option>
+            <option value="Crispy">Crispy</option>
+            <option value="glutten-free">glutten-free</option>
+          </select><br><br>
+
+          <select class="custom-select" id="toppings">
+            <option value"0">please select Toppings</option>
+            <option value="Mushroom">Mushroom</option>
+            <option value="Onion">Onion</option>
+            <option value="Ham">Ham</option>
+            <option value="Olives">Olives</option>
+            <option value="Tomatoes">Tomatoes</option>
+            <option value="Pineapples">Pineapples</option>
+          </select><br><br>
+          <select class="custom-select" id="delivery-option">
+            <option value="1">Deliver</option>
+            <option value="2">Collect</option>
+          </select>
+          <div class="form-group">
+            <label for="pizzaQuantity">select quantity:</label>
+            <input class="form-control" type="number" id=quantity min="1"><br><br>
+
+            <button type="submit" class="btn btn-danger navbar-btn" name="button">PRESS ME TO VIEW CART</button>
+          </div>
+      </div>
+      </form>
+      <form id="checkout-form">
+        <div class="form-group">
+          <textarea name="name" rows="8" cols="80" id="summary"></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-danger navbar-btn" name="button" id="checkout">place your order</button>
+        </div>
+      </form>
+
+  </body>
+</html>
